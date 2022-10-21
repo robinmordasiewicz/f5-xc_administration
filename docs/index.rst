@@ -3,4 +3,4 @@ Administration
 
 .. toctree::
 
-   personal-management_credentials.rst
+   administration.rst
