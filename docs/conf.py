@@ -4,7 +4,7 @@ import time
 import re
 import pkgutil
 import string
-# import f5_sphinx_theme
+import f5_sphinx_theme
 
 CURDIR = os.path.abspath(os.path.dirname(__file__))
 # -*- coding: utf-8 -*-
@@ -48,9 +48,10 @@ rst_prolog = open(os.path.join(CURDIR, 'rst_prolog.inc'),'r').read()
 rst_epilog = open(os.path.join(CURDIR, 'rst_epilog.inc'),'r').read()
 
 is_subproject=True
-readthedocs_url="https://f5-xc-workspaces.readthedocs.io"
+readthedocs_url="https://f5-xc-workspaces.readthedocs.io/"
 
 extensions = [
+    "sphinx_rtd_theme",
     "sphinx.ext.todo",
     "sphinx.ext.extlinks",
     "sphinx.ext.graphviz",
@@ -77,9 +78,9 @@ html_theme_options = {
     "show_toc_level": 4,
     "show_prev_next": False,
     "footer_items": ["last-updated"],
-    "site_name": "Infrastructure As Code",
+    "site_name": "Administration",
     "next_prev_link": True,
-    "repository_url": "https://github.com/robinmordasiewicz/f5-xc-iac",
+    "repository_url": "https://github.com/robinmordasiewicz/f5-xc_administration",
     "github_url": "https://github.com",
     "use_edit_page_button": True,
     "use_repository_button": True,
@@ -96,13 +97,13 @@ html_theme_options = {
 html_context = {
     "github_url": "https://github.com", # or your GitHub Enterprise site
     "github_user": "robinmordasiewicz",
-    "github_repo": "f5-xc-iac",
+    "github_repo": "f5-xc_administration",
     "github_version": "main",
     "doc_path": "docs",
 }
 
-html_title = "Infrastructure As Code"
-html_logo = "logo_f5.svg"
+html_title = "Administration"
+html_logo = "images/logo_f5.svg"
 
 graphviz_output_format = "svg"
 graphviz_font = "DejaVu Sans:style=Book"
@@ -153,7 +154,7 @@ source_suffix = [".rst"]
 master_doc = "index"
 
 # General information about the project.
-project = "Infrastructure"
+project = "Administration"
 author = "Robin Mordasiewicz"
 
 # The version info for the project you're documenting, acts as replacement for
@@ -192,12 +193,13 @@ todo_include_todos = True
 # a list of builtin themes.
 
 # html4_writer = True
-#html_theme = "f5_sphinx_theme"
-html_theme = "sphinx_rtd_theme"
+html_theme = "f5_sphinx_theme"
+#html_theme = "pyramid"
+#html_theme = "sphinx_rtd_theme"
 #html_theme = "sphinx_book_theme"
 #html_theme = "pydata_sphinx_theme"
-#html_theme_path = f5_sphinx_theme.get_html_theme_path()
-#html_sidebars = {"**": ["searchbox.html", "localtoc.html", "globaltoc.html"]}
+html_theme_path = f5_sphinx_theme.get_html_theme_path()
+html_sidebars = {"**": ["searchbox.html", "localtoc.html", "globaltoc.html"]}
 #html_sidebars = {
 #    "**": ["sidebar-nav-bs"]
 #}
