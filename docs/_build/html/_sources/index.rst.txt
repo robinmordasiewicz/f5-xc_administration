@@ -1,6 +1,0 @@
-Administration
-===============
-
-.. toctree::
-
-   administration.rst
