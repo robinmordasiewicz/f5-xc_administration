@@ -1,6 +1,6 @@
 .. _credentials:
 
-Administration
+Credentials
 ===============
 
 .. toctree::
