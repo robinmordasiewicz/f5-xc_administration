@@ -1,7 +1,10 @@
 .. _credentials:
 
-Credentials
-===========
+Administration
+===============
+
+.. toctree::
+   :hidden:
 
 .. topic:: Authentication
 

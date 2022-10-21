@@ -2,6 +2,5 @@ Administration
 ===============
 
 .. toctree::
-   :hidden:
 
-   personal-management_credentials.rst
+   administration.rst
