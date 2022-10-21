@@ -3,9 +3,6 @@
 Credentials
 ===============
 
-.. toctree::
-   :hidden:
-
 .. topic:: Authentication
 
     The API requests support two types of authentication: API Token and API Certificate. It is recommended to use API certificates as they offer more robust security via Mutual TLS (mTLS) authentication. The API tokens are used with one-way TLS authentication.
