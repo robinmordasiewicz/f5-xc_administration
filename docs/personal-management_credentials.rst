@@ -102,6 +102,7 @@ Github Account
    ? What is your preferred protocol for Git operations?  [Use arrows to move, type to filter]
    > HTTPS
      SSH
+   ? Authenticate Git with your GitHub credentials? No
    ? How would you like to authenticate GitHub CLI?  [Use arrows to move, type to filter]
      Login with a web browser
    > Paste an authentication token
