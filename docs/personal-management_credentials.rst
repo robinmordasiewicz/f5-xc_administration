@@ -91,7 +91,7 @@ Github Account
 --------------
 
 .. code-block:: console
-   :emphasize-lines: 3,6,10
+   :emphasize-lines: 3,6,8,10
    :substitutions:
    :caption: Initialize github authentication - get a personal access token from a github account
 
